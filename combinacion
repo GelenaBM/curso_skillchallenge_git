@@ -1,1 +1,55 @@
 Combina Rama
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (feature)
+$ git branch
+* feature
+  master
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (feature)
+$ git checkout
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (feature)
+$ git checkout master
+Switched to branch 'master'
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (master)
+$ ll
+total 5
+-rw-r--r-- 1 Georgina 197121   11 Sep 20 09:22 README
+-rw-r--r-- 1 Georgina 197121 1684 Sep 20 10:04 desafio
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (feature)
+$ ll
+total 6
+-rw-r--r-- 1 Georgina 197121   11 Sep 20 09:22 README
+-rw-r--r-- 1 Georgina 197121 1684 Sep 20 10:04 desafio
+-rw-r--r-- 1 Georgina 197121  478 Sep 20 10:14 ramafeature
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (feature)
+$ git checkout master
+Switched to branch 'master'
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (master)
+$ git merge feature
+Updating 52fe77d..2cff5c0
+Fast-forward
+ ramafeature | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 ramafeature
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (master)
+$ ll
+total 6
+-rw-r--r-- 1 Georgina 197121   11 Sep 20 09:22 README
+-rw-r--r-- 1 Georgina 197121 1684 Sep 20 10:04 desafio
+-rw-r--r-- 1 Georgina 197121  478 Sep 20 10:15 ramafeature
+
+Georgina@Georgina MINGW64 /c/git/SkillchallengeGIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
