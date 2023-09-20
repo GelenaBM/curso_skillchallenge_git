@@ -1,1 +1,18 @@
 Nueva rama
+$ echo "Nueva rama" > ramafeature
+$ git add ramafeature
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ramafeature
+
+$ git add ramafeature
+$ git commit -m "ramafeature.txt nuevo archivo"
+[feature 195b9d8] ramafeature.txt nuevo archivo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ramafeature
+
+$ git status
+On branch feature
+nothing to commit, working tree clean
